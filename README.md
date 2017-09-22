@@ -8,4 +8,4 @@ Features:
 - supports XML backup and restore
 - supports undo and redo actions
 
-[Image](https://i.imgur.com/YX6t2pS.jpg)
+![Image](https://i.imgur.com/YX6t2pS.jpg)
