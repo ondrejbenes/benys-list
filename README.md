@@ -1,9 +1,9 @@
 A TODO list that runs on Google cloud.
 
-        * Red 
-        + Green 
-            * dark  green 
-            * lime 
+* Red 
++ Green 
+    * dark  green 
+    * lime 
 
 Features:
 entries that consist of a hyperlink (or regular text) and a note
