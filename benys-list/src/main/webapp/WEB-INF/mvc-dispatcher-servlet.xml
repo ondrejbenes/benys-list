@@ -1,0 +1,60 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.2.xsd">
+
+	<context:component-scan base-package="cz.beny.list" />
+
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix">
+			<value>/WEB-INF/jsp/</value>
+		</property>
+		<property name="suffix">
+			<value>.jsp</value>
+		</property>
+	</bean>
+
+	<bean id="messageSource"
+		class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<value>messages</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="localeResolver"
+		class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+		<property name="defaultLocale" value="en" />
+	</bean>
+	
+	<bean id="categoryService" class="cz.beny.list.db.service.bean.CategoryServiceBean" />
+
+	<bean id="entryService" class="cz.beny.list.db.service.bean.EntryServiceBean" />
+	
+	<bean id="registeredUserService" class="cz.beny.list.db.service.bean.RegisteredUserServiceBean" />
+
+	<bean id="categoryDAO" class="cz.beny.list.db.dao.CategoryDAO" />
+
+	<bean id="entryDAO" class="cz.beny.list.db.dao.EntryDAO" />
+	
+	<bean id="registeredUserDAO" class="cz.beny.list.db.dao.RegisteredUserDAO" />
+
+	<bean id="actionManager" class="cz.beny.list.logic.action.ActionManagerBean" />
+	
+	<bean id="xmlSerializer" class="cz.beny.list.logic.XMLSerializerBean" />
+	
+	<bean id="xmlDeserializer" class="cz.beny.list.logic.XMLDeserializerBean" />
+
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<mvc:annotation-driven />
+
+</beans>

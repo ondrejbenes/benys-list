@@ -1,0 +1,280 @@
+body {
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: 0.9em;
+    background-color: LightBlue;
+    width: 1100px;   
+    margin: 0 auto 0 auto; 
+}
+
+header {
+	padding: 5px 0 15px 0;
+}
+
+header > table {
+	width: 100%;
+}
+
+h1 {
+	line-height: 0%;
+	font-family: Impact, Haettenschweiler, 'Arial Black', 'sans serif';
+	font-variant: small-caps;
+	font-size: 50px;
+}
+
+a {
+	color: black;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: black;
+	text-decoration: underline;
+}
+
+a:hover {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.showOnMouseOver {
+	opacity: 0.1;
+}
+
+#headerBtnsCell {
+	text-align: right;
+}
+
+#undoAndRedoBtns  {
+	padding-bottom: 8px;
+}
+
+#undoAndRedoBtns > form {
+	display: inline;
+}
+
+.headerBtnWithImgBackground {
+  	border:none;
+	background-position: center center;
+	background-color: LightBlue;
+	width: 32px;
+	height: 32px;	
+}
+
+#undoBtn {
+	background-image: url(/img/undo.png);
+}
+
+#disabledUndoBtn {
+	background-image: url(/img/undo-disabled.png);
+}
+
+#redoBtn {
+	background-image: url(/img/redo.png);
+}
+
+#disabledRedoBtn {
+	background-image: url(/img/redo-disabled.png);
+}
+
+#backupForm {
+	display: inline;
+}
+
+#backupBtn {
+	background-image: url(/img/backup.png);
+}
+
+#restoreBtn {
+	background-image: url(/img/restore.png);
+}
+
+.categoryHeader {
+	width: 100%;
+	background-color: CornflowerBlue;
+}
+
+.actionButtonsCategory > form,  .actionButtonsCategory > div {
+	display: inline;
+}
+
+.categoryHeaderBtn {
+	border:none;
+	background-position: center center;
+	background-color: CornflowerBlue;
+    background-size: 16px 16px;
+	width: 16px;
+	height: 16px;	
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+
+.submitRemoveButton {
+	background-image: url(/img/delete.png);
+}
+
+.submitEditButton {
+	background-image: url(/img/save.png);
+}
+
+.cancelEditButton {
+	background-image: url(/img/cancel.png);
+}
+
+.editButton {
+	background-image: url(/img/edit.png);
+}
+
+.unwrapped .wrapBtn {
+	background-image: url(/img/wrap.png);
+}
+
+.wrapped .wrapBtn {
+	background-image: url(/img/unwrap.png);
+}
+
+.upBtn {
+	background-image: url(/img/up.png);
+}
+
+.downBtn {
+	background-image: url(/img/down.png);
+}
+
+.categoryInfoCell {
+	width: 70%;
+}
+
+.addSubCatCell {
+	text-align: right;
+}
+
+.addSubCatCell input[type=text] {
+	width: 60%;
+}
+
+.addCategoryBtn {
+	background-image: url(/img/add.png);
+}
+
+.category {
+	padding-bottom: 10px;
+}
+
+.categoryLabel {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.entryTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.entryTable tr:nth-child(odd) {
+	background-color: DeepSkyBlue;
+} 
+
+.entryTable tr:nth-child(even) {
+	background-color: DodgerBlue ;
+} 
+
+.entryTable tr td:nth-child(1) {
+	width: 70%;
+} 
+
+.entryTable tr td:nth-child(2) {
+	width: 25%;
+} 
+
+.entryTable tr td:nth-child(3) {
+	width: 5%;
+} 
+
+.actionButtonsEntry {
+	 text-align: center;
+}
+
+.alterEntryBtn {
+	border:none;
+    background: transparent;
+	background-position: center center;
+    background-size: 16px 16px;
+	width: 16px;
+	height: 16px;	
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	margin-bottom: 5px;
+}
+
+.submitRemoveButton {
+	background-image: url(/img/delete.png);
+}
+
+.submitEntryEditButton {
+	background-image: url(/img/save.png);
+}
+.editEntryButton {
+	background-image: url(/img/edit.png);
+}
+
+.cancelEntryEditButton {
+	background-image: url(/img/cancel.png);
+}
+
+#newEntryHyperlinkInput, #newEntryNoteInput {
+	width: 98%;
+}
+
+.addEntryForm {
+	width: 100%;
+	border-bottom: 1px solid CornflowerBlue;	
+	text-align: center;
+}
+
+.addEntryTable {
+	width: 100%;
+}
+
+.addEntryTable tr td:nth-child(1) {
+	width: 70%;
+} 
+
+.addEntryTable tr td:nth-child(2) {
+	width: 25%;
+} 
+
+.addEntryTable tr td:nth-child(3) {
+	width: 5%;
+} 
+
+.hyperlinkInput {
+	width: 98%;
+}
+
+.noteInput {
+	width: 95%;
+}
+
+.submitEntryButton {
+	border:none;
+    background: transparent;
+	background-position: center center;
+    background-size: 16px 16px;
+	width: 16px;
+	height: 16px;	
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	margin-bottom: 5px;
+	background-image: url(/img/add.png);
+}
+
+footer {
+	padding-top: 10px;
+	text-align: center;
+	font-size: 10px;
+	font-style: italic;
+}
